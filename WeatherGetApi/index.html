@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Weather App</title>
+</head>
+
+<body onload="onloadLocation()">
+    <div class="weather">
+        <input type="text" class="search">
+        <div class="content">
+            <h1 class="captical">
+                <span class="city">Da Nang</span>
+                <span>,</span>
+                <span class="country">VN</span>
+            </h1>
+            <div class="time">5/5/2024, 13:36:15 PM</div>
+            <div class="timeperature">
+                <span class="value">23<sup>°</sup>C</span>
+            </div>
+
+            <div class="short-desc">
+                Clouds
+            </div>
+            <div class="more-desc">
+                <div class="visibility">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>1000m</span>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>1000m</span>
+                </div>
+                <div class="sun">
+                    <i class="fa-regular fa-sun"></i>
+                    <span>1000m</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

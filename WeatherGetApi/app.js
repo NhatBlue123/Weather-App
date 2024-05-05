@@ -8,6 +8,8 @@ var visibility = document.querySelector(".visibility span");
 var wind = document.querySelector(".wind span");
 var sun = document.querySelector(".sun span");
 var content = document.querySelector(".content");
+
+var buttonSearch = document.querySelector(".search-button");
 function changeBackground(temp) {
   var bodyq = document.querySelector("body");
   var weatherq = document.querySelector(".weather");
@@ -70,3 +72,7 @@ async function onloadLocation() {
   shortDesc.innerText = data.weather[0].main;
   changeBackground(data.main.temp - 273.15);
 }
+
+buttonSearch.addEventListener('click', ()=>{
+  changeWeather();
+})

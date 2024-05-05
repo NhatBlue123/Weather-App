@@ -17,9 +17,10 @@ body{
     padding: 30px 20px;
     background: yellowgreen;
     background: url(cold.jpg) no-repeat center/cover;
+    position: relative;
 }
 .search{
-    width: 290px;
+    width: 260px;
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -29,10 +30,23 @@ body{
     transition: 0.5s;
     font-size: 19px;
 }
+
 .search:focus{
     background: rgba(255, 255, 255, 0.7);
     border-radius: 15px 0px 15px 0px;
     transition: 0.5s;
+}
+.search-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 33px;
+    right: 7px;
+}
+#search-icon{
+    font-size: 30px;
+    padding: 5px 5px;
 }
 .content{
     text-align: center;

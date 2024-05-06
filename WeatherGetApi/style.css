@@ -18,6 +18,7 @@ body{
     background: yellowgreen;
     background: url(cold.jpg) no-repeat center/cover;
     position: relative;
+    transform: 0.5s;
 }
 .search{
     width: 260px;
